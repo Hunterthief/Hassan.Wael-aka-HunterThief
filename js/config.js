@@ -84,6 +84,21 @@ export const projects = [
     notes:
       "Previous roles: PH&LOC Committee Full Member; Public Health / Logistics and Organization Member."
   },
+   {
+    id: "big-x-research",
+    name: "Big-X Research Agency",
+    role: "Ambassador",
+    period: "Nov 2026 – Present",
+    location: "Egypt",
+    description:
+      "Ambassador work supporting research-oriented communication, outreach, and engagement initiatives.",
+    category: "Research",
+    tags: ["Ambassador", "Communication", "Research Support"],
+    formula: "β",
+    github: "",
+    demo: "",
+    notes: ""
+  },
   {
     id: "weave-wonder",
     name: "WeaveWonder",
@@ -125,21 +140,6 @@ export const projects = [
     category: "Pharmacy",
     tags: ["Dispensing", "Patient Care", "Operations", "Clinical Context"],
     formula: "Rx",
-    github: "",
-    demo: "",
-    notes: ""
-  },
-  {
-    id: "big-x-research",
-    name: "Big-X Research Agency",
-    role: "Ambassador",
-    period: "Nov 2026 – Present",
-    location: "Egypt",
-    description:
-      "Ambassador work supporting research-oriented communication, outreach, and engagement initiatives.",
-    category: "Research",
-    tags: ["Ambassador", "Communication", "Research Support"],
-    formula: "β",
     github: "",
     demo: "",
     notes: ""

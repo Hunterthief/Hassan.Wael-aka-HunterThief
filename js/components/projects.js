@@ -44,11 +44,19 @@ export function renderProjects() {
       ? el("span", { class: "badge" }, [project.category])
       : null;
 
+    const metaParts = [project.role, project.period, project.location].filter(
+      Boolean
+    );
+
+    const meta = metaParts.length
+      ? el("p", { class: "card-meta" }, [metaParts.join(" · ")])
+      : null;
+
     const tags =
       Array.isArray(project.tags) && project.tags.length
         ? el(
             "ul",
-            { class: "tag-list", "aria-label": "Technologies" },
+            { class: "tag-list", "aria-label": "Tags" },
             project.tags.map((tag) => el("li", { class: "tag" }, [tag]))
           )
         : null;
@@ -105,6 +113,7 @@ export function renderProjects() {
     const body = el("div", { class: "card-body" }, [
       categoryBadge,
       el("h3", { class: "card-title" }, [project.name]),
+      meta,
       el("p", { class: "card-description" }, [project.description || ""]),
       tags,
       actions.length ? el("div", { class: "card-actions" }, actions) : null,

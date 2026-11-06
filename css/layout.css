@@ -299,3 +299,133 @@ main {
     height: 16px;
   }
 }
+@media (max-width: 860px) {
+  .site-header {
+    padding-block: 8px;
+  }
+
+  .site-header .nav {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "brand actions"
+      "sections sections";
+    gap: 8px 10px;
+    align-items: center;
+  }
+
+  .site-header .brand {
+    grid-area: brand;
+    gap: 0;
+    min-width: 0;
+  }
+
+  .site-header .brand-text {
+    display: none;
+  }
+
+  .site-header .brand-symbol {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 0.78rem;
+    flex: 0 0 auto;
+  }
+
+  .site-header .nav-actions {
+    grid-area: actions;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+
+  .site-header .nav-actions .social-list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-header .nav-actions .social-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header .nav-actions .social-link {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    flex: 0 0 auto;
+  }
+
+  .site-header .nav-actions .social-link svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .site-header .nav-actions .sound-toggle {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    flex: 0 0 auto;
+  }
+
+  .site-header .nav-actions .sound-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .site-header .nav-sections {
+    grid-area: sections;
+    justify-content: flex-start;
+    gap: 4px;
+    padding-bottom: 0;
+  }
+
+  .site-header .nav-sections a {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 0.82rem;
+  }
+
+  main {
+    padding-top: 104px;
+  }
+
+  html {
+    scroll-padding-top: 118px;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand-symbol,
+  .site-header .nav-actions .social-link,
+  .site-header .nav-actions .sound-toggle {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+  }
+
+  .site-header .brand-symbol {
+    font-size: 0.72rem;
+  }
+
+  .site-header .nav-actions .social-link svg,
+  .site-header .nav-actions .sound-toggle svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .site-header .nav-actions {
+    gap: 4px;
+  }
+
+  .site-header .nav-actions .social-list {
+    gap: 3px;
+  }
+}

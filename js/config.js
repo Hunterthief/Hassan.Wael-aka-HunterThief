@@ -250,10 +250,10 @@ export const motionConfig = {
 
 export const soundConfig = {
   enabled: false,
-  volume: 0.12,
+  volume: 0.5,
   hover: true,
   click: true,
   intro: true,
-  ambient: false,
+  ambient: true,
   remember: true
 };

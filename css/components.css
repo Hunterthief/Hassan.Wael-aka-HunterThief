@@ -585,12 +585,11 @@
   object-position: center;
   transform: scale(1.02);
   filter:
-    grayscale(0.72)
-    contrast(1.08)
-    brightness(0.92)
-    sepia(0.18)
-    hue-rotate(88deg)
-    saturate(0.92);
+    grayscale(0.18)
+    contrast(1.04)
+    brightness(0.98)
+    saturate(0.92)
+    hue-rotate(8deg);
   transition:
     transform 720ms var(--ease),
     filter 720ms var(--ease);
@@ -599,12 +598,11 @@
 .profile-card:hover .avatar-media img {
   transform: scale(1.05);
   filter:
-    grayscale(0.54)
-    contrast(1.12)
-    brightness(0.98)
-    sepia(0.12)
-    hue-rotate(88deg)
-    saturate(1.05);
+    grayscale(0.06)
+    contrast(1.06)
+    brightness(1.01)
+    saturate(1.02)
+    hue-rotate(4deg);
 }
 
 .avatar-scan {

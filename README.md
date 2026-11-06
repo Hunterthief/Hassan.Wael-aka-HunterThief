@@ -1128,4 +1128,3 @@ medicine + code + design + music + public health + security + experimentation
 can exist without apologising for each other.
 
 That is the Scientific Matrix.
-```

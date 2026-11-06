@@ -199,3 +199,40 @@ body.loaded .site-header {
     transform: none !important;
   }
 }
+@keyframes avatarScan {
+  0% {
+    transform: translateY(-115%);
+  }
+  100% {
+    transform: translateY(115%);
+  }
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar-scan {
+  animation: avatarScan 5.4s linear infinite;
+}
+
+.avatar-orbit {
+  animation: orbitSpin 28s linear infinite;
+}
+
+.reduced-motion .avatar-scan,
+.reduced-motion .avatar-orbit {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-scan,
+  .avatar-orbit {
+    animation: none !important;
+  }
+}

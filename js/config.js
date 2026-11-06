@@ -14,7 +14,7 @@ export const site = {
   email: "hassanwaelhh@proton.me",
   phoneDisplay: "+20 111 500 3487",
   whatsappNumber: "201115003487",
-  whatsappMessage: "Hello Hassan, I found you on Scientific Matrix.",
+  whatsappMessage: "Hello Hassan, I found your personal site.",
   profileImage: "assets/images/profile.webp",
   profileAlt: "Hassan Wael profile portrait",
   about: [

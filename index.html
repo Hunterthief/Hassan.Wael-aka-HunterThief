@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050A08" />
+    <meta
+      name="description"
+      content="HunterThief — Scientific Matrix. A personal link hub and identity site at the intersection of pharmaceutical science and software development."
+    />
+
+    <title>HunterThief — Scientific Matrix</title>
+
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div
+      id="loader"
+      class="loader"
+      role="status"
+      aria-live="polite"
+      aria-label="Initializing Scientific Matrix"
+    >
+      <div class="loader-panel">
+        <p class="loader-line">$ initializing scientific_matrix</p>
+        <p class="loader-line">&gt; loading pharmacological lexicon...</p>
+        <p class="loader-line">&gt; compiling digital structures...</p>
+        <p class="loader-line">
+          &gt; handshake complete<span class="cursor">_</span>
+        </p>
+      </div>
+    </div>
+
+    <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header id="site-header" class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="#hero" class="brand" data-nav-link>
+          <span class="brand-symbol" aria-hidden="true">⌬</span>
+          <span class="brand-name" data-content="name">HunterThief</span>
+        </a>
+
+        <ul id="nav-sections" class="nav-sections">
+          <li><a href="#about" data-nav-link>About</a></li>
+          <li><a href="#projects" data-nav-link>Projects</a></li>
+          <li><a href="#interests" data-nav-link>Interests</a></li>
+          <li><a href="#contact" data-nav-link>Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <ul id="social-nav" class="social-list" aria-label="Social links">
+            <noscript>
+              <li>
+                <a class="social-link small" href="https://github.com/HunterThief" aria-label="GitHub">
+                  GH
+                </a>
+              </li>
+              <li>
+                <a class="social-link small" href="https://www.linkedin.com/in/hunterthief" aria-label="LinkedIn">
+                  IN
+                </a>
+              </li>
+              <li>
+                <a class="social-link small" href="mailto:hunterthief@example.com" aria-label="Email">
+                  @
+                </a>
+              </li>
+            </noscript>
+          </ul>
+
+          <button
+            id="sound-toggle"
+            class="icon-button sound-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Toggle sound effects"
+            title="Toggle sound effects"
+          >
+            <span class="sound-icon sound-off" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5 6 9H2v6h4l5 4V5Z" />
+                <path d="m22 9-6 6" />
+                <path d="m16 9 6 6" />
+              </svg>
+            </span>
+            <span class="sound-icon sound-on" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5 6 9H2v6h4l5 4V5Z" />
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero section" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <p class="terminal-label" data-hero style="--hero-delay: 80ms">
+            // personal_interface.status: online
+          </p>
+
+          <h1 id="hero-title" data-hero style="--hero-delay: 160ms" data-content="name">
+            HunterThief
+          </h1>
+
+          <p class="hero-intro" data-hero style="--hero-delay: 240ms" data-content="intro">
+            Pharmaceutical science and software development, treated as two dialects
+            of the same curiosity: structure, transformation, and systems.
+          </p>
+
+          <p class="hero-tagline" data-hero style="--hero-delay: 320ms" data-content="tagline">
+            Molecular logic. Digital architecture. Quiet experimentation.
+          </p>
+
+          <div class="hero-chips" data-hero style="--hero-delay: 400ms">
+            <span class="formula-chip" data-scientific-cycle data-offset="0">C₈H₉NO₂</span>
+            <span class="formula-chip" data-scientific-cycle data-offset="3">pH 7.4</span>
+            <span class="formula-chip" data-scientific-cycle data-offset="6">mol·L⁻¹</span>
+            <span class="formula-chip" data-scientific-cycle data-offset="9">λmax 254 nm</span>
+          </div>
+
+          <div class="hero-actions" data-hero style="--hero-delay: 480ms">
+            <a class="btn btn-primary" href="#projects">
+              <span>View projects</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">descend</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="section-kicker" data-reveal>01 / identity</p>
+            <h2 id="about-title" data-reveal style="--reveal-delay: 60ms">
+              Scientific Matrix
+            </h2>
+
+            <div id="about-text" class="prose">
+              <p data-reveal style="--reveal-delay: 120ms">
+                I am interested in the point where pharmaceutical reasoning and
+                software reasoning overlap: observing systems, modeling behavior,
+                and building tools that make complexity legible.
+              </p>
+              <p data-reveal style="--reveal-delay: 180ms">
+                Pharmacy provides a language for molecules, doses, interactions,
+                and uncertainty. Programming provides a language for structure,
+                automation, interfaces, and iteration. This site is a small attempt
+                to keep both voices in the same room.
+              </p>
+              <p data-reveal style="--reveal-delay: 240ms">
+                The result is not a portfolio in the conventional sense. It is more
+                like a personal terminal: a place where links, projects, interests,
+                and experiments can coexist without being forced into a single
+                professional identity.
+              </p>
+            </div>
+          </div>
+
+          <aside class="molecule-panel card" data-reveal="scale" style="--reveal-delay: 160ms">
+            <div class="panel-header">
+              <span class="terminal-label">molecule.viewer</span>
+              <span class="status-dot" aria-hidden="true"></span>
+            </div>
+
+            <svg class="molecule" viewBox="0 0 220 220" aria-hidden="true">
+              <g class="molecule-rotor">
+                <line class="bond" x1="110" y1="110" x2="164" y2="72" />
+                <line class="bond" x1="110" y1="110" x2="58" y2="76" />
+                <line class="bond" x1="110" y1="110" x2="154" y2="154" />
+                <line class="bond" x1="110" y1="110" x2="64" y2="150" />
+                <line class="bond" x1="164" y1="72" x2="188" y2="112" />
+                <line class="bond" x1="58" y1="76" x2="34" y2="116" />
+
+                <circle class="atom atom-center" cx="110" cy="110" r="11" />
+                <circle class="atom" cx="164" cy="72" r="7" />
+                <circle class="atom" cx="58" cy="76" r="7" />
+                <circle class="atom" cx="154" cy="154" r="7" />
+                <circle class="atom" cx="64" cy="150" r="7" />
+                <circle class="atom atom-small" cx="188" cy="112" r="5" />
+                <circle class="atom atom-small" cx="34" cy="116" r="5" />
+              </g>
+
+              <text class="molecule-label" x="110" y="202" text-anchor="middle">
+                C₈H₉NO₂
+              </text>
+            </svg>
+
+            <p class="panel-note">
+              Where molecular structures meet digital structures.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="section-kicker" data-reveal>02 / constructions</p>
+          <h2 id="projects-title" data-reveal style="--reveal-delay: 60ms">
+            Projects &amp; Work
+          </h2>
+          <p class="section-lead" data-reveal style="--reveal-delay: 120ms">
+            A flexible archive of tools, experiments, and interfaces. Add or remove
+            entries from <code>js/config.js</code>.
+          </p>
+
+          <div id="projects-grid" class="project-grid">
+            <noscript>
+              <p class="empty-note">
+                JavaScript is required to render configured projects. Core contact
+                links remain available in the navigation and footer.
+              </p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="section interests" aria-labelledby="interests-title">
+        <div class="container">
+          <p class="section-kicker" data-reveal>03 / disciplines</p>
+          <h2 id="interests-title" data-reveal style="--reveal-delay: 60ms">
+            Interests
+          </h2>
+          <p class="section-lead" data-reveal style="--reveal-delay: 120ms">
+            Fields of attention that do not always become projects, but still shape
+            the way I think.
+          </p>
+
+          <div id="interests-grid" class="interest-grid">
+            <noscript>
+              <p class="empty-note">
+                JavaScript is required to render configured interests.
+              </p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="section-kicker" data-reveal>04 / transmission</p>
+            <h2 id="contact-title" data-reveal style="--reveal-delay: 60ms">
+              Contact
+            </h2>
+            <p class="section-lead" data-reveal style="--reveal-delay: 120ms" data-content="contactNote">
+              For collaboration, questions, or quiet technical conversation, use one
+              of the channels below.
+            </p>
+
+            <a
+              id="contact-email"
+              class="btn btn-primary contact-email"
+              href="mailto:hunterthief@example.com"
+              data-reveal
+              style="--reveal-delay: 180ms"
+            >
+              <span class="btn-icon" aria-hidden="true">@</span>
+              <span class="btn-text">hunterthief@example.com</span>
+            </a>
+          </div>
+
+          <div class="contact-panel card" data-reveal="scale" style="--reveal-delay: 160ms">
+            <div class="panel-header">
+              <span class="terminal-label">social.index</span>
+              <span class="status-dot" aria-hidden="true"></span>
+            </div>
+
+            <ul id="social-footer" class="social-list social-list-large" aria-label="Footer social links"></ul>
+
+            <p class="panel-note">
+              <span class="prompt">sci_matrix:~$</span>
+              <span data-scientific-cycle data-offset="2">open --channel=all</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          <span class="footer-brand" data-content="name">HunterThief</span>
+          <span class="footer-sep" aria-hidden="true">/</span>
+          <span>Scientific Matrix</span>
+        </p>
+
+        <p class="footer-terminal">
+          <span class="prompt">~$</span>
+          <span data-scientific-cycle data-offset="5">echo $STRUCTURE</span>
+          <span class="cursor">_</span>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

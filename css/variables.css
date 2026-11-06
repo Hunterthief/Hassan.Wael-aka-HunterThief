@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #050a08;
+  --bg-2: #0c1912;
+  --bg-card: rgba(12, 25, 18, 0.74);
+  --bg-card-solid: #0c1912;
+
+  --accent: #35e887;
+  --accent-soft: rgba(53, 232, 135, 0.12);
+  --accent-border: rgba(53, 232, 135, 0.22);
+  --accent-muted: #799b86;
+
+  --text: #e2f5e9;
+  --text-dim: #9aafa2;
+  --text-faint: rgba(154, 175, 162, 0.62);
+
+  --border: rgba(121, 155, 134, 0.16);
+  --border-strong: rgba(53, 232, 135, 0.28);
+
+  --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.22);
+  --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.35);
+  --glow-sm: 0 0 0 1px rgba(53, 232, 135, 0.14), 0 0 18px rgba(53, 232, 135, 0.08);
+  --glow-md: 0 0 0 1px rgba(53, 232, 135, 0.18), 0 0 28px rgba(53, 232, 135, 0.12);
+
+  --container: 1120px;
+  --header-height: 72px;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration: 260ms;
+  --duration-slow: 620ms;
+}

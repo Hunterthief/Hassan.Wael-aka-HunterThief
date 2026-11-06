@@ -1,6 +1,3 @@
-Replace your `README.md` with this:
-
-```md
 # Scientific Matrix
 
 **Hassan Wael aka (HunterThief)**  
@@ -76,7 +73,7 @@ It uses:
 
 The site is configuration-driven, meaning most personal content can be edited from one file:
 
-```text
+text
 js/config.js
 ```
 

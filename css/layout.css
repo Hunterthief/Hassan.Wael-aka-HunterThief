@@ -272,3 +272,30 @@ main {
     display: none;
   }
 }
+@media (max-width: 640px) {
+  .site-header .brand-text {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-actions .social-list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .nav-actions .social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .nav-actions .social-link svg {
+    width: 16px;
+    height: 16px;
+  }
+}

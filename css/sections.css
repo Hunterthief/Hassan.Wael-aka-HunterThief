@@ -178,3 +178,28 @@
   gap: 12px;
   margin-top: 22px;
 }
+@media (max-width: 640px) {
+  .hero .hero-copy h1,
+  .hero .profile-name,
+  .hero .profile-alias,
+  .hero .avatar-fallback {
+    display: none;
+  }
+
+  .hero .profile-card {
+    width: min(100%, 260px);
+    margin-inline: auto;
+  }
+
+  .hero .avatar-shell {
+    padding: 14px 14px 0;
+  }
+
+  .hero .profile-status {
+    margin-top: 0;
+  }
+
+  .hero .profile-social {
+    padding: 14px;
+  }
+}
